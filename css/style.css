@@ -1,0 +1,384 @@
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerRegular.woff2') format('woff2'),
+      url('../fonts/MullerRegular.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerBold.woff2') format('woff2'),
+      url('../fonts/MullerBold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerLight.woff2') format('woff2'),
+      url('../fonts/MullerLight.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: url('../fonts/MullerMedium.woff2') format('woff2'),
+      url('../fonts/MullerMedium.woff') format('woff');
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Muller', sans-serif;
+    background-color: #E5E5E5;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    font-size: 16px;
+    line-height: 1;
+    color: #CC9933;
+    background-color: transparent;
+    border: 1px solid #CC9933;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.section-heading {
+    margin-left: 40px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 400;
+    color: #333333;
+}
+
+/* Header */
+
+.header {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.header-container {    /* без этих стилей не работало ниче дальше */
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.header-top {
+    margin-bottom: 30px;
+}
+
+.header-logo {
+    margin-right: 40px;
+}
+
+.header-number {
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 500;
+    color: #666666;
+}
+
+.header-top-btn {
+    font-size: 16px;
+    line-height: 1;
+    color: #CC9933;
+    padding-left: 24px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 21px 12px;
+    background-image: url('../img/keyboard_tab.png');
+}
+
+.nav-list {
+    display: flex;      /* элементы списка горизонтальной линией */
+}
+
+.header-nav {
+    padding: 14px 45px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.header-btns {
+    margin-left: auto;
+    padding-left: 57px;
+    border-left: 1px solid #E1E1E1;
+}
+
+.header-btn:not(:last-child) {
+    margin-right: 45px;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.nav-item {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.nav-link {
+    color: #666666;
+}
+
+/* Offers - Спецпреложения*/
+
+.section-offers {
+    margin-bottom: 70px;
+}
+
+.section-offers-cards {
+    display: flex;
+    flex-wrap: wrap;
+    height: 540px;
+}
+
+.section-offers-item {
+    flex: 1 1 50%;
+    margin-bottom: 23px;
+    max-width: 573px;
+    min-height: 258px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.section-offers-item-background1 {
+    background-image: url('../img/offers1.png');
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 234px;
+}
+
+.section-offers-item-background2 {
+    background-image: url('../img/offers2.png');
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 234px;
+
+}
+
+.section-offers-item-background3 {
+    background-image: url('../img/offers3.jpg');
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-right: 234px;
+}
+
+.section-offers-heading {
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section-offers-price {
+    margin-bottom: 47px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.section-offers-more {
+    font-size: 16px;
+    line-height: 1;
+    color: #FFCC66;
+}
+
+
+
+
+/* About  - О нас*/
+
+.section-about {
+    margin-bottom: 70px;
+}
+
+.section-about-text {
+    max-width: 888px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Services - Услуги*/
+
+.section-services {
+    margin-bottom: 70px;
+}
+
+.section-services-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-services-item {
+    margin-bottom: 23px;
+    flex: 1 1 50%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    max-width: 573px;
+}
+
+.section-services-item:not(:nth-child(2n)) {
+    margin-right: 23px;
+}
+
+.section-services-text {
+    padding-top: 26px;
+    padding-bottom: 50px;
+    padding-left: 45px;
+}
+
+.section-services-item-heading {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 500;
+    color: #CC9933;
+}
+
+.section-services-item-info {
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+}
+
+
+/* Benefits - Преимущества */
+
+.section-benefits {
+    margin-bottom: 70px;
+}
+
+.section-benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-benefits-item {
+    margin-bottom: 23px;
+    padding: 45px 40px 42px 41px;
+    flex: 1 1 25%;
+    background-color: #ffffff;
+    max-width: 275px;
+    border-radius: 15px;
+}
+
+.section-benefits-item:not(:nth-child(4n)) {
+    margin-right: 23px;
+}
+
+.section-benefits-info {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Hotels - Размещение*/
+
+.section-hotels-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-hotels-item {
+    margin-bottom: 23px;
+    /* flex: 1 1 33.33%; */
+    width: 374px;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.section-hotels-item:not(:nth-child(3n)) {
+    margin-right: 23px;
+}
+
+.section-hotels-price {
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+    margin-bottom: 16px;
+}
+
+.section-hotels-stars {
+    display: flex;
+}
+
+.section-hotels-text {
+    padding: 45px 36px 46px 31px;
+}
+
+.hotels-bold {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.section-hotels-info {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.section-hotels-location {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #999999;
+}
+
+
+
+
+
+
